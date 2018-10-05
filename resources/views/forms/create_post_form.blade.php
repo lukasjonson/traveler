@@ -19,8 +19,6 @@
             <datalist id="continents"></datalist>
         </div>
 
-        /* hejsan */
-
         <div class="form-row">
             {{Form::file('post_image')}}
         </div>
