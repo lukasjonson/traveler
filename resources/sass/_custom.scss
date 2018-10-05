@@ -157,7 +157,7 @@ a {
 
 .single-post-body-text {
     padding: 1rem;
-    border-bottom: .5px solid rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
     
 }
 
@@ -173,11 +173,15 @@ a {
     margin: 0 auto;
     padding: 1rem;
     opacity: 0.7;
+    border-top: .5px solid rgba(0, 0, 0, 0.5);
 }
 
 .single-post-information span {
     margin: 1rem;
     font-family: 'arial';
+    margin: 0;
+    opacity: 0.6;
+    margin-right: 1rem;
 }
 
 .single-post-user-buttons {
@@ -189,6 +193,33 @@ a {
     background-color: transparent;
     font-size: 1rem;
     color: #282828;
-    margin: 1rem;
     margin-top: 0;
+    outline: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.single-post-region {
+    padding: 0;
+    margin: 0;
+}
+
+.single-post-region span {
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    left: 20rem;
+    bottom: 4rem;
+}
+
+/* COMMENTS */
+
+.comments-container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.comments-wrapper {
+    width: 45vw;
+    margin-left: 3.5rem;
 }

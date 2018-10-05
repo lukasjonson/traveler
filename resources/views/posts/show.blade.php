@@ -7,6 +7,10 @@
         <div class="single-post-header" style="background-image:url(/storage/post_images/{{ $post->post_image }})">
             <div class="single-post-title">
                 <h1>{{ $post->title }}</h1>
+                <div class="single-post-region">
+                    <span> {{ $post->continent }}, </span>
+                    <span> {{ $post->country }} </span>
+                </div>
             </div>
         </div>
         <article class="single-post-body">
@@ -35,17 +39,19 @@
 
     </div>
 
+    <div class="comments-container">
     @foreach($post->comments as $comment)
-        <div>
-        <h4> {{ $comment->name }} </h4>
-        <p>
-            {{ $comment->comment }}
-        </p>
-        <p>
-            {{ $comment->created_at }}
-        </p>
+        <div class="comments-wrapper">
+            <h4 class="comment-title"> {{ $comment->name }} </h4>
+            <p class="comment-text">
+                {{ $comment->comment }}
+            </p>
+            <p class="comment-information">
+                {{ $comment->created_at }}
+            </p>
         </div>
     @endforeach
+    </div>
 
     @include('forms.comments_form')
 @endsection
