@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@include('inc.nav')
 
     <div>
         <h1>{{ $post->title }}</h1>

@@ -3,16 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
 <title> {{ config('app.name') }} </title>
 </head>
 <body>
-    
-    @include('inc.nav')
 
     @yield('content')
 
-    @include('inc.footer')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="/js/app.js"></script>
