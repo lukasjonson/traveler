@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* FORM STYLING */
+
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-wrapper form {
+    width: 40vw;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.form-row input, .form-row textarea, .form-row button {
+    padding: .7rem;
+    font-size: 1rem;
+}
