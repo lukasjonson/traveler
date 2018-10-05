@@ -7,12 +7,9 @@
 <title> {{ config('app.name') }} </title>
 </head>
 <body>
-    
-    @include('inc.nav')
 
     @yield('content')
 
-    @include('inc.footer')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="/js/app.js"></script>
