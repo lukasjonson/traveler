@@ -19,6 +19,8 @@
             <datalist id="continents"></datalist>
         </div>
 
+        /* git ändring */
+
         <div class="form-row">
             {{Form::file('post_image')}}
         </div>
