@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  font-family: 'arial';
+}
+
 /* FORM STYLING */
 
 .form-wrapper {
@@ -50,6 +55,37 @@
   width: 100vw;
   background-size: cover;
   background-position: center;
+}
+
+/* MAIN NAVIGATION */
+
+#main-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  padding: 1rem;
+  background-color: #7D98A1;
+}
+
+.list-item {
+  margin: 1rem;
+  border-right: 1px solid white;
+  padding-right: 0.5rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.list-item a {
+  color: #EEF1EF;
+  font-size: 1.2rem;
+}
+
+.list-item:last-of-type {
+  border: none;
 }
 
 /* WELCOME PAGE */
@@ -105,5 +141,86 @@
 #welcome-navigation {
   position: relative;
   bottom: 5rem;
+}
+
+/* SINGLE POST */
+
+.single-post-header {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 3vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.single-post-title {
+  position: absolute;
+  bottom: 0;
+  left: 5rem;
+  font-size: 3.2rem;
+  color: #EEF1EF;
+  font-family: 'Bella Fashion Personal Use';
+  text-shadow: 0px 0px 2px black;
+  color: white;
+}
+
+.single-post-body {
+  width: 45vw;
+  margin-left: 5vw;
+  padding: 2rem;
+}
+
+.single-post-body p {
+  font-family: arial;
+  font-weight: lighter;
+  line-height: 1.68rem;
+  color: #282828;
+}
+
+.single-post-body-text {
+  padding: 1rem;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.single-post-body-text p {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.single-post-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  opacity: 0.7;
+}
+
+.single-post-information span {
+  margin: 1rem;
+  font-family: 'arial';
+}
+
+.single-post-user-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.single-post-user-buttons a,
+.single-post-user-buttons input {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #282828;
+  margin: 1rem;
+  margin-top: 0;
 }
 
